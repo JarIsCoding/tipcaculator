@@ -181,7 +181,7 @@ export default function Home() {
 
           <div className="rightSide lg:p-8 p-6">
             <div className="grid grid-cols-12 pt-3">
-              <div className="lg:col-span-4 col-span-6 pt-3">
+              <div className="lg:col-span-4 col-span-6 lg:pt-3 pt-1">
                 <p className="white">
                   Tip Amount
                 </p>
@@ -195,7 +195,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-12 lg:pt-6 pt-5">
-              <div className="col-span-4 pt-3">
+              <div className="col-span-4 lg:pt-3 pt-1">
                 <p className="white">
                   Total
                 </p>
