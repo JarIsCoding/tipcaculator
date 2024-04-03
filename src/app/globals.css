@@ -2,32 +2,150 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: mono;
+  src: url(../../fonts/Space_Mono/SpaceMono-Regular.ttf);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.inputClass1 {
+  padding: 5px 30px;
+  width: 100%;
+  border-radius: 5px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+input{
+  background-color: hsl(189, 41%, 97%);
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+}
+
+input:focus{
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.invalidInput {
+  outline: 2px solid red;
+}
+
+.mainBg{
+  background-color: hsl(185, 41%, 84%);
+  height: 1000px;
+  font-family: mono;  
+  font-weight: 600;
+  color: hsl(186, 14%, 43%);
+}
+
+.cardColor{
+  background-color: white;
+  box-shadow: 0 8px 8px 4px lightblue;
+}
+
+.inputImg{
+  padding-top: 13px;
+  padding-left: 18px;
+}
+
+.customInput{
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.btnClass{
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.buttonNormal {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.buttonClicked {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.fw{
+  font-weight: 700 !important;
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+}
+
+.width{
+  width: 100%;
+}
+
+.buttonNormal:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+
+.rightSide{
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+}
+
+.white{
+  color: white;
+}
+
+.outputs{
+  color: hsl(172, 67%, 45%);
+  font-weight: 700 !important;
+}
+
+.resetBtn {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.disableReset {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 20px;
+  opacity: .25;
+}
+
+.resetBtn:hover{
+  background-color: hsl(185, 41%, 84%);
+}
+
+.smallTxt {
+  font-size: 12px;
+}
+
+.normVh{
+  height: auto;
+}
+
+.vh{
+  height: 100vh;
 }
