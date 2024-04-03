@@ -43,22 +43,21 @@ export default function Home() {
     setActiveButton(5)
   }
 
-  const caculateStuff = () => {
-    if (baseCost !== 0 && percent !== 0 && people !== 0) {
-      setFinalTip(baseCost * percent / people)
-      setFinalCost(baseCost / people)
-      setResetOn(true)
-      console.log('Current decimal: ' + percent)
-      console.log('Current cost: $' + baseCost)
-      console.log('Current People: ' + people)
-      console.log('Final Tip Per: ' + finalTip)
-      console.log('Final Cost Per: ' + finalCost)
-    }
-  }
-
   useEffect(() => {
+    const caculateStuff = () => {
+      if (baseCost !== 0 && percent !== 0 && people !== 0) {
+        setFinalTip(baseCost * percent / people)
+        setFinalCost(baseCost / people)
+        setResetOn(true)
+        console.log('Current decimal: ' + percent)
+        console.log('Current cost: $' + baseCost)
+        console.log('Current People: ' + people)
+        console.log('Final Tip Per: ' + finalTip)
+        console.log('Final Cost Per: ' + finalCost)
+      }
+    }
     caculateStuff()
-  }, [baseCost, people, percent, finalCost, finalTip, caculateStuff])
+  }, [baseCost, people, percent, finalCost, finalTip])
 
   const handleReset = () => {
     setPercent(0)
