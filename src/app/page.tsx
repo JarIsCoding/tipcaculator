@@ -102,7 +102,7 @@ export default function Home() {
                 </div>
                 <div className={`text-end ${noZero ? 'block' : 'hidden'}`}>
                   <p className="py-2">
-                    Can't be 0
+                    Can{"'"}t be 0
                   </p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function Home() {
                 </div>
                 <div className={`text-end col-span-5 ${noZeroTwo ? 'block' : 'hidden'}`}>
                   <p className="py-2">
-                    Can't be 0
+                    Can{"'"}t be 0
                   </p>
                 </div>
               </div>
