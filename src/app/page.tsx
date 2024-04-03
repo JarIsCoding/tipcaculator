@@ -16,6 +16,7 @@ export default function Home() {
   const [noZero, setNoZero] = useState<boolean>(false)
   const [noZeroTwo, setNoZeroTwo] = useState<boolean>(false)
   const [resetOn, setResetOn] = useState<boolean>(false)
+  const [wholeTip, setWholeTip] = useState<number>(0);
 
   const handleBtnOne = () => {
     setPercent(.05)
@@ -47,11 +48,13 @@ export default function Home() {
     const caculateStuff = () => {
       if (baseCost !== 0 && percent !== 0 && people !== 0) {
         setFinalTip(baseCost * percent / people)
-        setFinalCost(baseCost / people)
+        setWholeTip(baseCost * percent)
+        setFinalCost(baseCost + wholeTip / people)
         setResetOn(true)
         console.log('Current decimal: ' + percent)
         console.log('Current cost: $' + baseCost)
         console.log('Current People: ' + people)
+        console.log('Whole tip: '  + wholeTip)
         console.log('Final Tip Per: ' + finalTip)
         console.log('Final Cost Per: ' + finalCost)
       }
@@ -63,6 +66,7 @@ export default function Home() {
     setPercent(0)
     setBaseCost(0)
     setPeople(0)
+    setWholeTip(0)
     setFinalTip(0)
     setFinalCost(0)
     setCustomInputValue('')
