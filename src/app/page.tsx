@@ -185,7 +185,7 @@ export default function Home() {
                 <p className="white">
                   Tip Amount
                 </p>
-                <p className="text-[12px]">
+                <p className="text-[12px] tracking-wider">
                   / person
                 </p>
               </div>
@@ -199,7 +199,7 @@ export default function Home() {
                 <p className="white">
                   Total
                 </p>
-                <p className="text-[12px]">
+                <p className="text-[12px] tracking-wider">
                   / person
                 </p>
               </div>
