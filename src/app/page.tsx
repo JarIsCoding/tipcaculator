@@ -58,7 +58,7 @@ export default function Home() {
 
   useEffect(() => {
     caculateStuff()
-  }, [baseCost, people, percent, finalCost, finalTip])
+  }, [baseCost, people, percent, finalCost, finalTip, caculateStuff])
 
   const handleReset = () => {
     setPercent(0)
